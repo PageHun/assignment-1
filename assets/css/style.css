@@ -73,7 +73,7 @@ nav{
     list-style: none;
 }
 
-.nav__content ul li.active {
+.nav__content ul li#active {
     text-decoration: underline;
 }
 
@@ -87,14 +87,13 @@ footer{
     background-color: #008F97;
 }
 
-footer .container{
+/* footer .container{
     margin: 0;
-}
+} */
 
 .footer__content{
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    justify-content: space-between;
     padding: 20px 0;
     color: #fff;
 }
@@ -109,5 +108,11 @@ footer .container{
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
