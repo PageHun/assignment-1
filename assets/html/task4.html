@@ -7,6 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style4.css">
     <title>Assignment-1</title>
 </head>
@@ -15,24 +18,103 @@
         <header>
             <div class="container">
                 <div class="header__content">
-                    <a href="../../index.html">Front-End</a>
-                    <h1>Assignment-1</h1>                       
+                    <div class="header__top">
+                        <a href="../../index.html">Front-End</a>
+                        <h1>Assignment-1</h1>                       
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="./task1.html">Task 1</a></li>
+                            <li><a href="./task2.html">Task 2</a></li>
+                            <li><a href="../exercise1/index.html">Task 3</a></li>
+                            <li id="active"><a href="./task4.html">Task 4</a></li>
+                        </ul>
+                    </nav>                    
                 </div>
             </div>
         </header>
-        <nav>
-            <div class="container">
-                <div class="nav__content">
-                    <ul>
-                        <li><a href="./task1.html">Task 1</a></li>
-                        <li><a href="./task2.html">Task 2</a></li>
-                        <li><a href="./task3.html">Task 3</a></li>
-                        <li id="active"><a href="./task4.html">Task 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <main>
+            <section class="content">
+                <div class="container">
+                    <div class="content__content">
+                        <table>
+                            <caption id="legend">Grades of SE-2599</caption>
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Name</th>
+                                    <th>Subject</th>
+                                    <th>Grade</th>
+                                </tr>                            
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Adam</td>
+                                    <td>Physics</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Eva</td>
+                                    <td>Biology</td>
+                                    <td>87</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sanzhar</td>
+                                    <td>Computer science</td>
+                                    <td>97</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">4</td>
+                                    <td rowspan="2">Bob</td>
+                                    <td>Maths</td>
+                                    <td>67</td>
+                                </tr>
+                                <tr>
+                                    <td>Geometry</td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Average grade:</td>
+                                    <td>79.8</td>
+                                </tr>                            
+                            </tbody>
+                        </table>
+                        <form action="" method="">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Type here..." name="" id="name">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Type here..." name="" id="email">                                
+                            </div>
+                            <div>
+                                <label for="select">Who are you ?</label>
+                                <select name="" id="select">
+                                    <option value="">Student</option>
+                                    <option value="">Teacher</option>
+                                    <option value="">Others</option>
+                                </select>                                
+                            </div>
+                            <div>
+                                <label for="">Are you on grant ?</label>
+                                <label for="yes" style="background-color: #50cd6d; cursor: pointer;">Yes</label>
+                                <input type="radio" name="radio" id="yes" style="cursor: pointer;">     
+                                <label for="no" style="background-color: #e7133f; cursor: pointer;">No</label>
+                                <input type="radio" name="radio" id="no" style="cursor: pointer;">                                 
+                            </div>
+                            <div>
+                                <label for="textarea">Comment: </label>
+                                <textarea placeholder="Type here..." name="" id="teaxtarea"></textarea>                                     
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>                        
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="container">
